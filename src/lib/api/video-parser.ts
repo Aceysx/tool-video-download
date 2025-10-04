@@ -4,7 +4,7 @@
 import type { VideoInfo, VideoParseRequest, VideoParseResponse } from './types';
 import axios, { AxiosError } from 'axios';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_VIDEO_API_URL;
+const API_BASE_URL = process.env.NEXT_PUBLIC_VIDEO_API_URL || 'https://firstool.online';
 const API_KEY = process.env.VIDEO_API_KEY;
 
 /**
