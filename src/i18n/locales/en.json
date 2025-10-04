@@ -1,0 +1,222 @@
+{
+    "common": {
+        "appName": "Video Downloader",
+        "appDescription": "Free online video downloader, support TikTok, Instagram, Douyin, Suno Music and more platforms without watermarks",
+        "loading": "Loading...",
+        "error": "Error",
+        "success": "Success",
+        "download": "Download",
+        "copy": "Copy",
+        "clear": "Clear",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "back": "Back",
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact Us",
+        "switchLanguage": "Switch Language"
+    },
+    "nav": {
+        "appName": "Video Downloader",
+        "home": "Home",
+        "tools": "Tools",
+        "videoDownloader": "Video Downloader",
+        "blog": "Blog",
+        "about": "About"
+    },
+    "home": {
+        "title": "Free Online Video Downloader",
+        "subtitle": "Support TikTok, Instagram, Douyin, Suno Music and more",
+        "description": "No installation required, parse online, download videos without watermarks quickly",
+        "getStarted": "Get Started",
+        "features": {
+            "title": "Features",
+            "noWatermark": {
+                "title": "No Watermark",
+                "description": "Downloaded videos contain no platform watermarks"
+            },
+            "multiPlatform": {
+                "title": "Multi-Platform",
+                "description": "Support TikTok, Instagram, Douyin and more"
+            },
+            "highQuality": {
+                "title": "High Quality",
+                "description": "Preserve original video quality, support HD downloads"
+            },
+            "free": {
+                "title": "Completely Free",
+                "description": "No registration, no payment, free forever"
+            },
+            "fast": {
+                "title": "Lightning Fast",
+                "description": "Parse in seconds, instant download, no waiting"
+            },
+            "privacy": {
+                "title": "Privacy Protected",
+                "description": "No user data stored, protect your privacy"
+            }
+        },
+        "supportedPlatforms": {
+            "title": "Supported Platforms",
+            "douyin": "Douyin",
+            "tiktok": "TikTok",
+            "youtube": "YouTube",
+            "facebook": "Facebook",
+            "instagram": "Instagram",
+            "twitter": "Twitter/X",
+            "bilibili": "Bilibili",
+            "pinterest": "Pinterest",
+            "reddit": "Reddit",
+            "threads": "Threads",
+            "suno": "Suno",
+            "kuaishou": "Kuaishou"
+        }
+    },
+    "videoDownloader": {
+        "title": "Video Downloader Without Watermark",
+        "subtitle": "Support TikTok, Instagram, Douyin and more",
+        "inputLabel": "Media URL",
+        "inputPlaceholder": "Paste video URL, Suno music URL...",
+        "parseButton": "Parse Now",
+        "parsing": "Parsing...",
+        "downloadStandard": "Download SD",
+        "downloadHD": "Download HD",
+        "downloadAudio": "Download Audio",
+        "supportedPlatforms": "Supported Platforms",
+        "videoInfo": {
+            "author": "Author",
+            "duration": "Duration",
+            "views": "Views",
+            "likes": "Likes",
+            "comments": "Comments",
+            "watermarkFree": "No Watermark"
+        },
+        "howToUse": {
+            "title": "How to Use",
+            "step1": "Open TikTok/Douyin app and find the video you want to download",
+            "step2": "Tap the share button and select 'Copy Link'",
+            "step3": "Paste the link into the input box above and click 'Parse Video'",
+            "step4": "After parsing is complete, click the download button to save the video"
+        },
+        "features": {
+            "title": "Features",
+            "item1": "No Watermark: Downloaded videos have no watermarks",
+            "item2": "Multi-Platform: Support TikTok, Instagram, Douyin and more",
+            "item3": "High Quality: Preserve original video quality",
+            "item4": "Completely Free: No registration required, completely free to use",
+            "item5": "Fast Parse: Parse in seconds, instant download",
+            "item6": "Privacy Protected: No user data stored"
+        },
+        "faq": {
+            "title": "FAQ",
+            "q1": {
+                "question": "How to download TikTok videos?",
+                "answer": "Open TikTok app, find the video you want to download, tap the share button, select 'Copy Link', then paste the link into our tool's input box and click 'Parse Video'."
+            },
+            "q2": {
+                "question": "Do downloaded videos have watermarks?",
+                "answer": "Our tool automatically removes video watermarks. Downloaded videos are watermark-free HD originals."
+            },
+            "q3": {
+                "question": "Do I need to login or register?",
+                "answer": "Not at all! Our tool is 100% free and requires no registration or login."
+            },
+            "q4": {
+                "question": "Which platforms are supported?",
+                "answer": "Currently supports: Douyin, TikTok, Instagram, Suno Music, Kuaishou, YouTube Shorts, Facebook and other mainstream platforms."
+            },
+            "q5": {
+                "question": "Can I use downloaded videos commercially?",
+                "answer": "Downloaded videos are for personal learning and appreciation only. For commercial use, please contact the original author for authorization. Please respect the copyright of original creators."
+            }
+        },
+        "disclaimer": "Downloaded content is for personal learning only, please respect original author's copyright",
+        "preview": {
+            "author": "Author",
+            "audioPlayerNotSupported": "Your browser does not support audio playback",
+            "downloadAudio": "Download Audio",
+            "downloadImage": "Download Image",
+            "downloadVideo": "Download Video",
+            "downloadCover": "Download Cover",
+            "audio": "Audio",
+            "standardQuality": "Standard Quality",
+            "moreResolutions": "More Video Resolution Options",
+            "withAudio": "With Audio",
+            "noAudio": "No Audio",
+            "tip": "Tip",
+            "resolutionTip": "Click the desired resolution to download, with ",
+            "audioIconTip": " icon means with audio"
+        },
+        "form": {
+            "video": "Video",
+            "music": "Music",
+            "supportTip": "Support: Douyin, TikTok, Instagram, YouTube, Suno Music and more"
+        },
+        "errors": {
+            "emptyUrl": "Please enter video link",
+            "invalidUrl": "Invalid link format",
+            "unsupportedPlatform": "Platform not supported yet",
+            "parseFailed": "Parse failed, please try again later",
+            "networkError": "Network error, please check your connection",
+            "timeout": "Request timeout, please retry",
+            "rateLimitExceeded": "Too many requests, please try again later",
+            "videoNotFound": "Video not found or has been deleted",
+            "videoPrivate": "This is a private video and cannot be downloaded",
+            "unknown": "Unknown error, please retry"
+        }
+    },
+    "errors": {
+        "emptyUrl": "Please enter video link",
+        "invalidUrl": "Invalid link format",
+        "unsupportedPlatform": "Platform not supported yet",
+        "parseFailed": "Parse failed, please try again later",
+        "networkError": "Network error, please check your connection",
+        "timeout": "Request timeout, please retry",
+        "rateLimitExceeded": "Too many requests, please try again later",
+        "videoNotFound": "Video not found or has been deleted",
+        "videoPrivate": "This is a private video and cannot be downloaded",
+        "unknown": "Unknown error, please retry"
+    },
+    "footer": {
+        "description": "Free online video downloader, support multi-platform watermark-free downloads",
+        "links": {
+            "title": "Quick Links",
+            "home": "Home",
+            "tools": "Tools",
+            "about": "About Us",
+            "contact": "Contact Us"
+        },
+        "legal": {
+            "title": "Legal",
+            "privacy": "Privacy Policy",
+            "terms": "Terms of Service",
+            "disclaimer": "Disclaimer"
+        },
+        "social": {
+            "title": "Follow Us"
+        },
+        "copyright": "© 2025 Video Downloader. All rights reserved."
+    },
+    "legal": {
+        "privacy": {
+            "title": "Privacy Policy",
+            "lastUpdated": "Last updated: October 4, 2025"
+        },
+        "terms": {
+            "title": "Terms of Service",
+            "lastUpdated": "Last updated: October 4, 2025"
+        },
+        "disclaimer": {
+            "title": "Disclaimer",
+            "content": {
+                "title": "Important Notice",
+                "point1": "This tool is for personal learning and research only",
+                "point2": "Please do not use downloaded content for commercial purposes",
+                "point3": "Please respect the copyright and intellectual property of original authors",
+                "point4": "By using this tool to download content, you agree to comply with relevant laws and regulations",
+                "point5": "This tool assumes no legal responsibility for user behavior"
+            }
+        }
+    }
+}

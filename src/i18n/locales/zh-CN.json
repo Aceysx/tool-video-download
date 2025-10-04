@@ -1,0 +1,222 @@
+{
+    "common": {
+        "appName": "视频下载工具",
+        "appDescription": "免费在线视频下载工具，支持抖音、TikTok、Instagram、Suno音乐等平台无水印下载",
+        "loading": "加载中...",
+        "error": "出错了",
+        "success": "成功",
+        "download": "下载",
+        "copy": "复制",
+        "clear": "清空",
+        "submit": "提交",
+        "cancel": "取消",
+        "confirm": "确认",
+        "back": "返回",
+        "home": "首页",
+        "about": "关于",
+        "contact": "联系我们",
+        "switchLanguage": "切换语言"
+    },
+    "nav": {
+        "appName": "视频下载工具",
+        "home": "首页",
+        "tools": "工具",
+        "videoDownloader": "视频下载",
+        "blog": "博客",
+        "about": "关于"
+    },
+    "home": {
+        "title": "免费在线视频下载工具",
+        "subtitle": "支持抖音、TikTok、Instagram、Suno音乐等主流平台",
+        "description": "无需安装，在线解析，快速下载无水印视频",
+        "getStarted": "立即使用",
+        "features": {
+            "title": "功能特点",
+            "noWatermark": {
+                "title": "无水印下载",
+                "description": "下载的视频不含任何平台水印"
+            },
+            "multiPlatform": {
+                "title": "多平台支持",
+                "description": "支持抖音、TikTok、Instagram等主流平台"
+            },
+            "highQuality": {
+                "title": "高清画质",
+                "description": "保留视频原始画质，支持高清下载"
+            },
+            "free": {
+                "title": "完全免费",
+                "description": "无需注册，无需付费，永久免费使用"
+            },
+            "fast": {
+                "title": "极速解析",
+                "description": "秒级解析，即时下载，无需等待"
+            },
+            "privacy": {
+                "title": "隐私保护",
+                "description": "不保存任何用户数据，保护您的隐私"
+            }
+        },
+        "supportedPlatforms": {
+            "title": "支持平台",
+            "douyin": "抖音",
+            "tiktok": "TikTok",
+            "youtube": "YouTube",
+            "facebook": "Facebook",
+            "instagram": "Instagram",
+            "twitter": "Twitter/X",
+            "bilibili": "Bilibili",
+            "pinterest": "Pinterest",
+            "reddit": "Reddit",
+            "threads": "Threads",
+            "suno": "Suno",
+            "kuaishou": "更多"
+        }
+    },
+    "videoDownloader": {
+        "title": "视频去水印下载工具",
+        "subtitle": "支持抖音、TikTok、Instagram等平台",
+        "inputLabel": "媒体链接",
+        "inputPlaceholder": "粘贴视频链接、Suno音乐链接...",
+        "parseButton": "立即解析",
+        "parsing": "解析中...",
+        "downloadStandard": "下载标清",
+        "downloadHD": "下载高清",
+        "downloadAudio": "下载音频",
+        "supportedPlatforms": "支持平台",
+        "videoInfo": {
+            "author": "作者",
+            "duration": "时长",
+            "views": "播放",
+            "likes": "点赞",
+            "comments": "评论",
+            "watermarkFree": "无水印"
+        },
+        "howToUse": {
+            "title": "使用方法",
+            "step1": "打开抖音/TikTok等APP，找到想要下载的视频",
+            "step2": "点击分享按钮，选择【复制链接】",
+            "step3": "将链接粘贴到上方输入框，点击【解析视频】",
+            "step4": "等待解析完成后，点击下载按钮即可保存视频"
+        },
+        "features": {
+            "title": "功能特点",
+            "item1": "无水印下载：下载的视频无任何水印",
+            "item2": "多平台支持：支持抖音、TikTok、Instagram等主流平台",
+            "item3": "高清画质：保留原视频画质",
+            "item4": "完全免费：无需注册，完全免费使用",
+            "item5": "快速解析：秒级解析，即时下载",
+            "item6": "隐私保护：不保存任何用户数据"
+        },
+        "faq": {
+            "title": "常见问题",
+            "q1": {
+                "question": "如何下载抖音视频？",
+                "answer": "打开抖音APP，找到想要下载的视频，点击分享按钮，选择【复制链接】，然后将链接粘贴到本工具的输入框中，点击【解析视频】即可。"
+            },
+            "q2": {
+                "question": "下载的视频有水印吗？",
+                "answer": "我们的工具会自动去除视频水印，下载的视频是无水印的高清原片。"
+            },
+            "q3": {
+                "question": "是否需要登录或注册？",
+                "answer": "完全不需要！我们的工具100%免费，无需注册或登录即可使用。"
+            },
+            "q4": {
+                "question": "支持哪些平台？",
+                "answer": "目前支持：抖音(Douyin)、TikTok、Instagram、Suno音乐、快手、YouTube Shorts、Facebook等主流平台。"
+            },
+            "q5": {
+                "question": "下载的视频可以商用吗？",
+                "answer": "下载的视频仅供个人学习和欣赏使用，商业使用请联系原作者获得授权。请尊重原创作者的版权。"
+            }
+        },
+        "disclaimer": "下载的内容仅供个人学习使用，请尊重原作者版权",
+        "preview": {
+            "author": "作者",
+            "audioPlayerNotSupported": "您的浏览器不支持音频播放",
+            "downloadAudio": "下载音频",
+            "downloadImage": "下载图片",
+            "downloadVideo": "下载视频",
+            "downloadCover": "下载封面",
+            "audio": "音频",
+            "standardQuality": "标准画质",
+            "moreResolutions": "更多视频分辨率下载选项",
+            "withAudio": "包含音频",
+            "noAudio": "无音频",
+            "tip": "提示",
+            "resolutionTip": "点击所需分辨率即可下载，带",
+            "audioIconTip": "图标的包含音频"
+        },
+        "form": {
+            "video": "视频",
+            "music": "音乐",
+            "supportTip": "支持：抖音、TikTok、Instagram、YouTube、Suno音乐等平台"
+        },
+        "errors": {
+            "emptyUrl": "请输入视频链接",
+            "invalidUrl": "无效的链接格式",
+            "unsupportedPlatform": "暂不支持该平台",
+            "parseFailed": "解析失败，请稍后重试",
+            "networkError": "网络错误，请检查网络连接",
+            "timeout": "请求超时，请重试",
+            "rateLimitExceeded": "请求过于频繁，请稍后再试",
+            "videoNotFound": "视频不存在或已被删除",
+            "videoPrivate": "该视频为私密视频，无法下载",
+            "unknown": "未知错误，请重试"
+        }
+    },
+    "errors": {
+        "emptyUrl": "请输入视频链接",
+        "invalidUrl": "无效的链接格式",
+        "unsupportedPlatform": "暂不支持该平台",
+        "parseFailed": "解析失败，请稍后重试",
+        "networkError": "网络错误，请检查网络连接",
+        "timeout": "请求超时，请重试",
+        "rateLimitExceeded": "请求过于频繁，请稍后再试",
+        "videoNotFound": "视频不存在或已被删除",
+        "videoPrivate": "该视频为私密视频，无法下载",
+        "unknown": "未知错误，请重试"
+    },
+    "footer": {
+        "description": "免费在线视频下载工具",
+        "links": {
+            "title": "快速链接",
+            "home": "首页",
+            "tools": "工具",
+            "about": "关于我们",
+            "contact": "联系我们"
+        },
+        "legal": {
+            "title": "法律信息",
+            "privacy": "隐私政策",
+            "terms": "服务条款",
+            "disclaimer": "免责声明"
+        },
+        "social": {
+            "title": "关注我们"
+        },
+        "copyright": "© 2025 视频下载工具. 保留所有权利."
+    },
+    "legal": {
+        "privacy": {
+            "title": "隐私政策",
+            "lastUpdated": "最后更新：2025年10月4日"
+        },
+        "terms": {
+            "title": "服务条款",
+            "lastUpdated": "最后更新：2025年10月4日"
+        },
+        "disclaimer": {
+            "title": "免责声明",
+            "content": {
+                "title": "重要声明",
+                "point1": "本工具仅供个人学习和研究使用",
+                "point2": "下载的内容请勿用于商业用途",
+                "point3": "请尊重原作者的版权和知识产权",
+                "point4": "使用本工具下载内容即表示您同意遵守相关法律法规",
+                "point5": "本工具不对用户的使用行为承担任何法律责任"
+            }
+        }
+    }
+}
