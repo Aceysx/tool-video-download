@@ -5,10 +5,20 @@ import { getTranslations } from 'next-intl/server';
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'legal' });
+    const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://yourdomain.com';
+    const currentUrl = locale === 'zh-CN' ? `${baseUrl}/legal/terms` : `${baseUrl}/${locale}/legal/terms`;
 
     return {
         title: t('terms.title'),
-        description: locale === 'zh-CN' ? '我们的服务条款说明' : 'Our terms of service statement'
+        description: locale === 'zh-CN' ? '我们的服务条款说明' : 'Our terms of service statement',
+        alternates: {
+            canonical: currentUrl,
+            languages: {
+                'zh-CN': `${baseUrl}/legal/terms`,
+                'en': `${baseUrl}/en/legal/terms`,
+                'x-default': `${baseUrl}/legal/terms`
+            }
+        }
     };
 }
 

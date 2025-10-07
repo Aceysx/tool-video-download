@@ -16,7 +16,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         title: `${t('title')} - ${tCommon('appName')}`,
         description: t('subtitle'),
         alternates: {
-            canonical: currentUrl
+            canonical: currentUrl,
+            languages: {
+                'zh-CN': `${baseUrl}/about`,
+                'en': `${baseUrl}/en/about`,
+                'x-default': `${baseUrl}/about`
+            }
         }
     };
 }
