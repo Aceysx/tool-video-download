@@ -198,6 +198,45 @@
         },
         "copyright": "© 2025 Video Downloader. All rights reserved."
     },
+    "about": {
+        "title": "About Us",
+        "subtitle": "We are committed to providing users with the best free online video download service",
+        "mission": {
+            "title": "Our Mission",
+            "description": "Make video downloading simple, fast, and free",
+            "content1": "Our video downloader supports multiple mainstream platforms such as Douyin, TikTok, Instagram, and Suno Music. No software installation required, just paste the link to quickly download watermark-free HD videos.",
+            "content2": "We believe everyone should be able to easily save and share their favorite content. Therefore, we provide a completely free service with no registration, no payment, and free forever."
+        },
+        "whyChooseUs": {
+            "title": "Why Choose Us?",
+            "noWatermark": {
+                "title": "Watermark-free Download",
+                "description": "Downloaded videos contain no platform watermarks and maintain original quality"
+            },
+            "multiPlatform": {
+                "title": "Multi-platform Support",
+                "description": "Support 10+ mainstream platforms like Douyin, TikTok, Instagram"
+            },
+            "fast": {
+                "title": "Lightning Fast",
+                "description": "Parse in seconds, instant download"
+            },
+            "privacy": {
+                "title": "Privacy Protected",
+                "description": "No user data stored, protect your privacy"
+            }
+        },
+        "notice": {
+            "title": "Important Notice",
+            "point1": "This tool is for personal learning and research only, not for commercial use",
+            "point2": "Please respect the copyright and intellectual property of original authors",
+            "point3": "We do not store any video files, all content comes from the original platform"
+        },
+        "contact": {
+            "title": "Contact Us",
+            "description": "If you have any questions or suggestions, please contact us:"
+        }
+    },
     "legal": {
         "privacy": {
             "title": "Privacy Policy",

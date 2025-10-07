@@ -4,7 +4,7 @@ import { VideoDownloadSection } from '@/components/video-downloader/video-downlo
 import { getAllPlatforms } from '@/lib/video/platforms';
 import { Badge } from '@/registry/new-york-v4/ui/badge';
 import { Card, CardDescription, CardHeader, CardTitle } from '@/registry/new-york-v4/ui/card';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from '@vercel/analytics/next';
 
 import { CheckCircle, Download, Globe, Shield, Zap } from 'lucide-react';
 import { getTranslations } from 'next-intl/server';

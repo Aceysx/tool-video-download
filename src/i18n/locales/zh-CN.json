@@ -198,6 +198,45 @@
         },
         "copyright": "© 2025 视频下载工具."
     },
+    "about": {
+        "title": "关于我们",
+        "subtitle": "我们致力于为用户提供最好的免费在线视频下载服务",
+        "mission": {
+            "title": "我们的使命",
+            "description": "让视频下载变得简单、快速、免费",
+            "content1": "我们的视频下载工具支持抖音、TikTok、Instagram、Suno音乐等多个主流平台。无需安装任何软件，只需粘贴链接即可快速下载无水印的高清视频。",
+            "content2": "我们相信每个人都应该能够方便地保存和分享自己喜欢的内容。因此，我们提供完全免费的服务，无需注册，无需付费，永久免费使用。"
+        },
+        "whyChooseUs": {
+            "title": "为什么选择我们？",
+            "noWatermark": {
+                "title": "无水印下载",
+                "description": "下载的视频不含任何平台水印，保持原始画质"
+            },
+            "multiPlatform": {
+                "title": "多平台支持",
+                "description": "支持抖音、TikTok、Instagram等10+主流平台"
+            },
+            "fast": {
+                "title": "极速解析",
+                "description": "秒级解析速度，即时下载"
+            },
+            "privacy": {
+                "title": "隐私保护",
+                "description": "不保存任何用户数据，保护您的隐私"
+            }
+        },
+        "notice": {
+            "title": "重要提示",
+            "point1": "本工具仅供个人学习和研究使用，请勿用于商业用途",
+            "point2": "下载的内容请尊重原作者的版权和知识产权",
+            "point3": "我们不存储任何视频文件，所有内容均来自原平台"
+        },
+        "contact": {
+            "title": "联系我们",
+            "description": "如有任何问题或建议，欢迎通过以下方式联系我们："
+        }
+    },
     "legal": {
         "privacy": {
             "title": "隐私政策",
