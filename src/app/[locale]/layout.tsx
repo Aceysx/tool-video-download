@@ -76,7 +76,7 @@ export default async function LocaleLayout({
                     strategy='afterInteractive'
                 />
 
-                <NextIntlClientProvider messages={messages}>
+                <NextIntlClientProvider locale={locale} messages={messages}>
                     <ThemeProvider attribute='class'>
                         <div className='flex min-h-screen flex-col'>
                             <Navbar />
