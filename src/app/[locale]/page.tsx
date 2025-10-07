@@ -84,17 +84,36 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             <HowToSchema locale={locale} />
 
             <div className='flex flex-col'>
-                {/* Hero Section with Gradient Background */}
+                {/* Hero Section with Modern AI Effects */}
                 <section className='relative overflow-hidden'>
-                    {/* Gradient Background */}
+                    {/* Animated Gradient Background */}
                     <div className='from-primary/5 via-background to-primary/10 absolute inset-0 -z-10 bg-gradient-to-br' />
                     <div className='from-primary/20 absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] via-transparent to-transparent' />
 
+                    {/* Animated Grid Pattern */}
+                    <div className='absolute inset-0 -z-10 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] bg-[size:14px_24px]' />
+
+                    {/* Floating Orbs */}
+                    <div className='bg-primary/10 absolute top-20 left-1/4 h-72 w-72 animate-pulse rounded-full blur-3xl' />
+                    <div
+                        className='absolute top-40 right-1/4 h-96 w-96 animate-pulse rounded-full bg-purple-500/10 blur-3xl'
+                        style={{ animationDelay: '1s' }}
+                    />
+                    <div
+                        className='absolute bottom-20 left-1/3 h-64 w-64 animate-pulse rounded-full bg-blue-500/10 blur-3xl'
+                        style={{ animationDelay: '2s' }}
+                    />
+
                     <div className='container mx-auto max-w-7xl px-4 md:px-6 lg:px-8'>
                         <div className='flex flex-col items-center justify-center space-y-6 py-8 text-center md:py-16'>
-                            <h1 className='animate-in fade-in slide-in-from-bottom-4 from-foreground to-foreground/60 bg-gradient-to-br bg-clip-text text-3xl font-bold tracking-tight text-transparent duration-1000 sm:text-4xl md:text-5xl lg:text-6xl'>
-                                {t('title')}
-                            </h1>
+                            {/* AI-Style Animated Title */}
+                            <div className='relative'>
+                                <h1 className='animate-in fade-in slide-in-from-bottom-4 from-foreground via-primary to-foreground bg-gradient-to-r bg-clip-text text-3xl font-bold tracking-tight text-transparent duration-1000 sm:text-4xl md:text-5xl lg:text-6xl'>
+                                    {t('title')}
+                                </h1>
+                                {/* Glow Effect */}
+                                <div className='from-primary/20 to-primary/20 absolute inset-0 -z-10 bg-gradient-to-r via-purple-500/20 blur-2xl' />
+                            </div>
 
                             <p className='animate-in fade-in slide-in-from-bottom-4 text-muted-foreground max-w-[700px] text-sm delay-200 duration-1000 sm:text-base md:text-lg'>
                                 {t('description')}
@@ -112,20 +131,24 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                                             className='group border-border/50 bg-card/50 hover:border-primary/50 hover:bg-card/80 hover:shadow-primary/20 relative overflow-hidden rounded-xl border p-4 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:shadow-lg'
                                             style={{ animationDelay: `${index * 50}ms` }}>
                                             <div className='flex flex-col items-center gap-2'>
-                                                <div className='transition-transform duration-300 group-hover:scale-110'>
+                                                <div className='relative transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3'>
                                                     <PlatformLogo
                                                         name={p.config.name}
                                                         icon={p.config.icon}
                                                         logo={p.config.logo}
                                                         size={32}
                                                     />
+                                                    {/* Logo Glow */}
+                                                    <div className='bg-primary/20 absolute inset-0 -z-10 rounded-full opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-100' />
                                                 </div>
                                                 <span className='text-muted-foreground group-hover:text-foreground text-xs font-medium transition-colors'>
                                                     {p.config.name}
                                                 </span>
                                             </div>
-                                            {/* Glow effect on hover */}
-                                            <div className='from-primary/0 via-primary/0 to-primary/0 absolute inset-0 -z-10 bg-gradient-to-br opacity-0 transition-opacity duration-300 group-hover:opacity-20' />
+                                            {/* Animated Border Glow */}
+                                            <div className='from-primary/0 via-primary/20 absolute inset-0 -z-10 rounded-xl bg-gradient-to-br to-purple-500/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100' />
+                                            {/* Shimmer Effect */}
+                                            <div className='absolute inset-0 -z-10 translate-x-[-100%] bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-700 group-hover:translate-x-[100%]' />
                                         </div>
                                     ))}
                                 </div>
@@ -153,25 +176,43 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                     </div>
                 </section>
 
-                {/* Features Section with Modern Cards */}
+                {/* Features Section with AI Effects */}
                 <section className='border-border/40 relative border-t py-12 md:py-20'>
-                    {/* Background Pattern */}
+                    {/* Animated Background Pattern */}
                     <div className='absolute inset-0 -z-10 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]' />
+
+                    {/* Floating Gradient Orbs */}
+                    <div
+                        className='bg-primary/5 absolute top-20 right-0 h-96 w-96 animate-pulse rounded-full blur-3xl'
+                        style={{ animationDuration: '4s' }}
+                    />
+                    <div
+                        className='absolute bottom-20 left-0 h-96 w-96 animate-pulse rounded-full bg-purple-500/5 blur-3xl'
+                        style={{ animationDuration: '5s', animationDelay: '1s' }}
+                    />
 
                     <div className='container mx-auto max-w-7xl px-4 md:px-6 lg:px-8'>
                         <div className='mb-12 text-center'>
-                            <h2 className='from-foreground to-foreground/60 mb-3 bg-gradient-to-br bg-clip-text text-2xl font-bold text-transparent md:text-3xl'>
-                                {t('features.title')}
-                            </h2>
-                            <div className='bg-primary mx-auto h-1 w-20 rounded-full' />
+                            <div className='relative inline-block'>
+                                <h2 className='from-foreground via-primary to-foreground mb-3 bg-gradient-to-r bg-clip-text text-2xl font-bold text-transparent md:text-3xl'>
+                                    {t('features.title')}
+                                </h2>
+                                {/* Title Underline with Animation */}
+                                <div className='from-primary to-primary mx-auto h-1 w-20 rounded-full bg-gradient-to-r via-purple-500' />
+                            </div>
                         </div>
 
                         <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
-                            <Card className='group border-border/50 bg-card/50 hover:border-primary/50 hover:shadow-primary/10 relative overflow-hidden backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-xl'>
+                            <Card className='group border-border/50 bg-card/50 hover:border-primary/50 hover:shadow-primary/10 relative overflow-hidden border backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-xl'>
+                                {/* Gradient Background */}
                                 <div className='from-primary/0 via-primary/5 to-primary/0 absolute inset-0 -z-10 bg-gradient-to-br opacity-0 transition-opacity duration-300 group-hover:opacity-100' />
+                                {/* Shimmer Effect */}
+                                <div className='via-primary/10 absolute inset-0 -z-10 translate-x-[-100%] bg-gradient-to-r from-transparent to-transparent transition-transform duration-700 group-hover:translate-x-[100%]' />
                                 <CardHeader className='space-y-3'>
-                                    <div className='bg-primary/10 text-primary inline-flex h-12 w-12 items-center justify-center rounded-xl transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3'>
+                                    <div className='bg-primary/10 text-primary relative inline-flex h-12 w-12 items-center justify-center rounded-xl transition-all duration-300 group-hover:scale-110 group-hover:rotate-3'>
                                         <Download className='h-6 w-6' />
+                                        {/* Icon Glow */}
+                                        <div className='bg-primary/20 absolute inset-0 -z-10 rounded-xl opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-100' />
                                     </div>
                                     <CardTitle className='text-lg'>{t('features.noWatermark.title')}</CardTitle>
                                     <CardDescription className='text-sm'>
@@ -180,11 +221,13 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                                 </CardHeader>
                             </Card>
 
-                            <Card className='group border-border/50 bg-card/50 hover:border-primary/50 hover:shadow-primary/10 relative overflow-hidden backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-xl'>
+                            <Card className='group border-border/50 bg-card/50 hover:border-primary/50 hover:shadow-primary/10 relative overflow-hidden border backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-xl'>
                                 <div className='from-primary/0 via-primary/5 to-primary/0 absolute inset-0 -z-10 bg-gradient-to-br opacity-0 transition-opacity duration-300 group-hover:opacity-100' />
+                                <div className='via-primary/10 absolute inset-0 -z-10 translate-x-[-100%] bg-gradient-to-r from-transparent to-transparent transition-transform duration-700 group-hover:translate-x-[100%]' />
                                 <CardHeader className='space-y-3'>
-                                    <div className='bg-primary/10 text-primary inline-flex h-12 w-12 items-center justify-center rounded-xl transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3'>
+                                    <div className='bg-primary/10 text-primary relative inline-flex h-12 w-12 items-center justify-center rounded-xl transition-all duration-300 group-hover:scale-110 group-hover:rotate-3'>
                                         <Globe className='h-6 w-6' />
+                                        <div className='bg-primary/20 absolute inset-0 -z-10 rounded-xl opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-100' />
                                     </div>
                                     <CardTitle className='text-lg'>{t('features.multiPlatform.title')}</CardTitle>
                                     <CardDescription className='text-sm'>
@@ -193,11 +236,13 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                                 </CardHeader>
                             </Card>
 
-                            <Card className='group border-border/50 bg-card/50 hover:border-primary/50 hover:shadow-primary/10 relative overflow-hidden backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-xl'>
+                            <Card className='group border-border/50 bg-card/50 hover:border-primary/50 hover:shadow-primary/10 relative overflow-hidden border backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-xl'>
                                 <div className='from-primary/0 via-primary/5 to-primary/0 absolute inset-0 -z-10 bg-gradient-to-br opacity-0 transition-opacity duration-300 group-hover:opacity-100' />
+                                <div className='via-primary/10 absolute inset-0 -z-10 translate-x-[-100%] bg-gradient-to-r from-transparent to-transparent transition-transform duration-700 group-hover:translate-x-[100%]' />
                                 <CardHeader className='space-y-3'>
-                                    <div className='bg-primary/10 text-primary inline-flex h-12 w-12 items-center justify-center rounded-xl transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3'>
+                                    <div className='bg-primary/10 text-primary relative inline-flex h-12 w-12 items-center justify-center rounded-xl transition-all duration-300 group-hover:scale-110 group-hover:rotate-3'>
                                         <CheckCircle className='h-6 w-6' />
+                                        <div className='bg-primary/20 absolute inset-0 -z-10 rounded-xl opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-100' />
                                     </div>
                                     <CardTitle className='text-lg'>{t('features.highQuality.title')}</CardTitle>
                                     <CardDescription className='text-sm'>
@@ -206,10 +251,11 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                                 </CardHeader>
                             </Card>
 
-                            <Card className='group border-border/50 bg-card/50 hover:border-primary/50 hover:shadow-primary/10 relative overflow-hidden backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-xl'>
+                            <Card className='group border-border/50 bg-card/50 hover:border-primary/50 hover:shadow-primary/10 relative overflow-hidden border backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-xl'>
                                 <div className='from-primary/0 via-primary/5 to-primary/0 absolute inset-0 -z-10 bg-gradient-to-br opacity-0 transition-opacity duration-300 group-hover:opacity-100' />
+                                <div className='via-primary/10 absolute inset-0 -z-10 translate-x-[-100%] bg-gradient-to-r from-transparent to-transparent transition-transform duration-700 group-hover:translate-x-[100%]' />
                                 <CardHeader className='space-y-3'>
-                                    <Badge className='w-fit bg-gradient-to-r from-green-500 to-emerald-600 text-white'>
+                                    <Badge className='w-fit animate-pulse bg-gradient-to-r from-green-500 to-emerald-600 text-white shadow-lg shadow-green-500/20'>
                                         FREE
                                     </Badge>
                                     <CardTitle className='text-lg'>{t('features.free.title')}</CardTitle>
@@ -219,11 +265,13 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                                 </CardHeader>
                             </Card>
 
-                            <Card className='group border-border/50 bg-card/50 hover:border-primary/50 hover:shadow-primary/10 relative overflow-hidden backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-xl'>
+                            <Card className='group border-border/50 bg-card/50 hover:border-primary/50 hover:shadow-primary/10 relative overflow-hidden border backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-xl'>
                                 <div className='from-primary/0 via-primary/5 to-primary/0 absolute inset-0 -z-10 bg-gradient-to-br opacity-0 transition-opacity duration-300 group-hover:opacity-100' />
+                                <div className='via-primary/10 absolute inset-0 -z-10 translate-x-[-100%] bg-gradient-to-r from-transparent to-transparent transition-transform duration-700 group-hover:translate-x-[100%]' />
                                 <CardHeader className='space-y-3'>
-                                    <div className='bg-primary/10 text-primary inline-flex h-12 w-12 items-center justify-center rounded-xl transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3'>
+                                    <div className='bg-primary/10 text-primary relative inline-flex h-12 w-12 items-center justify-center rounded-xl transition-all duration-300 group-hover:scale-110 group-hover:rotate-3'>
                                         <Zap className='h-6 w-6' />
+                                        <div className='bg-primary/20 absolute inset-0 -z-10 rounded-xl opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-100' />
                                     </div>
                                     <CardTitle className='text-lg'>{t('features.fast.title')}</CardTitle>
                                     <CardDescription className='text-sm'>
@@ -232,11 +280,13 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                                 </CardHeader>
                             </Card>
 
-                            <Card className='group border-border/50 bg-card/50 hover:border-primary/50 hover:shadow-primary/10 relative overflow-hidden backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-xl'>
+                            <Card className='group border-border/50 bg-card/50 hover:border-primary/50 hover:shadow-primary/10 relative overflow-hidden border backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-xl'>
                                 <div className='from-primary/0 via-primary/5 to-primary/0 absolute inset-0 -z-10 bg-gradient-to-br opacity-0 transition-opacity duration-300 group-hover:opacity-100' />
+                                <div className='via-primary/10 absolute inset-0 -z-10 translate-x-[-100%] bg-gradient-to-r from-transparent to-transparent transition-transform duration-700 group-hover:translate-x-[100%]' />
                                 <CardHeader className='space-y-3'>
-                                    <div className='bg-primary/10 text-primary inline-flex h-12 w-12 items-center justify-center rounded-xl transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3'>
+                                    <div className='bg-primary/10 text-primary relative inline-flex h-12 w-12 items-center justify-center rounded-xl transition-all duration-300 group-hover:scale-110 group-hover:rotate-3'>
                                         <Shield className='h-6 w-6' />
+                                        <div className='bg-primary/20 absolute inset-0 -z-10 rounded-xl opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-100' />
                                     </div>
                                     <CardTitle className='text-lg'>{t('features.privacy.title')}</CardTitle>
                                     <CardDescription className='text-sm'>
@@ -252,10 +302,12 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 <section className='container mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-16 lg:px-8'>
                     <div className='mx-auto max-w-3xl'>
                         <div className='mb-12 text-center'>
-                            <h2 className='from-foreground to-foreground/60 mb-3 bg-gradient-to-br bg-clip-text text-2xl font-bold text-transparent md:text-3xl'>
-                                {tVideo('faq.title')}
-                            </h2>
-                            <div className='bg-primary mx-auto h-1 w-20 rounded-full' />
+                            <div className='relative inline-block'>
+                                <h2 className='from-foreground via-primary to-foreground mb-3 bg-gradient-to-r bg-clip-text text-2xl font-bold text-transparent md:text-3xl'>
+                                    {tVideo('faq.title')}
+                                </h2>
+                                <div className='from-primary to-primary mx-auto h-1 w-20 rounded-full bg-gradient-to-r via-purple-500' />
+                            </div>
                         </div>
 
                         <div className='space-y-4'>
