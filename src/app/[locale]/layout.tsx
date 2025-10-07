@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
+import Script from 'next/script';
 
 import { ThemeProvider } from 'next-themes';
 
@@ -63,6 +64,14 @@ export default async function LocaleLayout({
         <html suppressHydrationWarning lang={locale}>
             <body
                 className={`${geistSans.variable} ${geistMono.variable} bg-background text-foreground overscroll-none antialiased`}>
+                {/* Google AdSense */}
+                <Script
+                    async
+                    src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6374049973848571'
+                    crossOrigin='anonymous'
+                    strategy='afterInteractive'
+                />
+
                 <NextIntlClientProvider messages={messages}>
                     <ThemeProvider attribute='class'>
                         <div className='flex min-h-screen flex-col'>
