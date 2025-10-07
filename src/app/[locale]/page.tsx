@@ -1,6 +1,6 @@
 import { PlatformLogo } from '@/components/platform-logo';
 import { FAQPageSchema, HowToSchema, WebApplicationSchema } from '@/components/seo/structured-data';
-import { DownloadForm } from '@/components/video-downloader/download-form';
+import { VideoDownloadSection } from '@/components/video-downloader/video-download-section';
 import { getAllPlatforms } from '@/lib/video/platforms';
 import { Badge } from '@/registry/new-york-v4/ui/badge';
 import { Card, CardDescription, CardHeader, CardTitle } from '@/registry/new-york-v4/ui/card';
@@ -136,7 +136,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 {/* 视频下载工具 */}
                 <section className='container mx-auto max-w-7xl px-4 pb-12 md:px-6 md:pb-16 lg:px-8'>
                     <div className='mx-auto max-w-4xl'>
-                        <DownloadForm />
+                        <VideoDownloadSection locale={locale} />
                     </div>
                 </section>
 
