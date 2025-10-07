@@ -116,16 +116,16 @@ export function VideoDownloadSection() {
     };
 
     return (
-        <div className='space-y-6'>
+        <div className='space-y-4'>
             {/* 输入表单 - 现代卡片设计 */}
-            <Card className='relative overflow-hidden border-border/50 bg-card p-6 shadow-lg sm:p-8'>
+            <Card className='relative overflow-hidden border-border/50 bg-card p-5 shadow-lg sm:p-6'>
                 {/* 装饰性渐变背景 */}
-                <div className='absolute -top-10 -right-10 h-40 w-40 rounded-full bg-primary/5 blur-3xl' />
-                <div className='absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-primary/5 blur-3xl' />
+                <div className='bg-primary/5 absolute -top-10 -right-10 h-40 w-40 rounded-full blur-3xl' />
+                <div className='bg-primary/5 absolute -bottom-10 -left-10 h-40 w-40 rounded-full blur-3xl' />
 
-                <form onSubmit={handleSubmit} className='relative space-y-4'>
+                <form onSubmit={handleSubmit} className='relative space-y-3'>
                     <div>
-                        <div className='mb-3 flex items-center justify-between'>
+                        <div className='mb-2 flex items-center justify-between'>
                             <div className='text-muted-foreground flex items-center gap-3 text-xs'>
                                 <div className='flex items-center gap-1'>
                                     <Video className='h-3.5 w-3.5' />
@@ -144,7 +144,7 @@ export function VideoDownloadSection() {
                                     value={url}
                                     onChange={(e) => setUrl(e.target.value)}
                                     placeholder={t('inputPlaceholder')}
-                                    className='h-12 border-2 border-primary/20 bg-background py-3 pl-4 pr-10 transition-all duration-200 focus:border-primary/50 focus:shadow-lg focus:shadow-primary/10'
+                                    className='border-primary/20 bg-background focus:border-primary/50 focus:shadow-primary/10 h-12 border-2 py-3 pr-10 pl-4 transition-all duration-200 focus:shadow-lg'
                                     disabled={loading}
                                 />
                                 {url && (
@@ -157,7 +157,7 @@ export function VideoDownloadSection() {
                                 type='submit'
                                 disabled={loading}
                                 size='lg'
-                                className='h-12 w-full bg-gradient-to-r from-primary to-primary/90 shadow-lg shadow-primary/20 transition-all duration-200 hover:scale-[1.02] hover:shadow-xl hover:shadow-primary/30 sm:w-auto sm:px-8'>
+                                className='from-primary to-primary/90 shadow-primary/20 hover:shadow-primary/30 h-12 w-full bg-gradient-to-r shadow-lg transition-all duration-200 hover:scale-[1.02] hover:shadow-xl sm:w-auto sm:px-8'>
                                 {loading ? (
                                     <>
                                         <Loader2 className='mr-2 h-5 w-5 animate-spin' />
@@ -198,7 +198,7 @@ export function VideoDownloadSection() {
 
                     {/* 支持类型提示 */}
                     {!url && !loading && (
-                        <div className='fade-in mt-4 rounded-lg bg-muted/30 p-3'>
+                        <div className='fade-in mt-3 rounded-lg bg-muted/30 p-2.5'>
                             <p className='text-center text-xs text-muted-foreground'>💡 {t('form.supportTip')}</p>
                         </div>
                     )}

@@ -92,7 +92,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                     <div className='from-primary/20 absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] via-transparent to-transparent' />
 
                     <div className='container mx-auto max-w-7xl px-4 md:px-6 lg:px-8'>
-                        <div className='flex flex-col items-center justify-center space-y-6 py-12 text-center md:py-20'>
+                        <div className='flex flex-col items-center justify-center space-y-6 py-8 text-center md:py-16'>
                             <h1 className='animate-in fade-in slide-in-from-bottom-4 from-foreground to-foreground/60 bg-gradient-to-br bg-clip-text text-3xl font-bold tracking-tight text-transparent duration-1000 sm:text-4xl md:text-5xl lg:text-6xl'>
                                 {t('title')}
                             </h1>
@@ -136,12 +136,12 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 </section>
 
                 {/* 视频下载工具 */}
-                <section className='container mx-auto max-w-7xl px-4 pb-12 md:px-6 md:pb-16 lg:px-8'>
+                <section className='container mx-auto max-w-7xl px-4 py-8 md:px-6 md:py-12 lg:px-8'>
                     <div className='mx-auto max-w-4xl'>
                         <VideoDownloadSection />
 
                         {/* 懒加载广告单元 - 在下载工具下方 */}
-                        <div className='mt-8'>
+                        <div className='mt-6'>
                             <LazyAdUnit
                                 adSlot='1234567890'
                                 adFormat='auto'
