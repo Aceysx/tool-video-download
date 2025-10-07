@@ -138,13 +138,13 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 <section className='container mx-auto max-w-7xl px-4 pb-12 md:px-6 md:pb-16 lg:px-8'>
                     <div className='mx-auto max-w-4xl'>
                         <VideoDownloadSection />
-                        
+
                         {/* 懒加载广告单元 - 在下载工具下方 */}
                         <div className='mt-8'>
-                            <LazyAdUnit 
-                                adSlot="1234567890" 
-                                adFormat="auto"
-                                className="rounded-lg overflow-hidden"
+                            <LazyAdUnit
+                                adSlot='1234567890'
+                                adFormat='auto'
+                                className='overflow-hidden rounded-lg'
                                 fallbackHeight={200}
                             />
                         </div>

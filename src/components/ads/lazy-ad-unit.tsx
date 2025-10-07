@@ -10,9 +10,9 @@ interface LazyAdUnitProps {
     fallbackHeight?: number;
 }
 
-export function LazyAdUnit({ 
-    adSlot, 
-    adFormat = 'auto', 
+export function LazyAdUnit({
+    adSlot,
+    adFormat = 'auto',
     adStyle = { display: 'block' },
     className = '',
     fallbackHeight = 250
@@ -35,7 +35,8 @@ export function LazyAdUnit({
             // 动态加载 AdSense 脚本
             const script = document.createElement('script');
             script.async = true;
-            script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6374049973848571';
+            script.src =
+                'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6374049973848571';
             script.crossOrigin = 'anonymous';
             script.onload = () => {
                 setIsLoaded(true);
@@ -54,9 +55,9 @@ export function LazyAdUnit({
                     }
                 });
             },
-            { 
+            {
                 rootMargin: '100px', // 提前 100px 开始加载
-                threshold: 0.1 
+                threshold: 0.1
             }
         );
 
@@ -81,31 +82,29 @@ export function LazyAdUnit({
     }, [isLoaded, isVisible]);
 
     return (
-        <div 
+        <div
             ref={adRef}
             className={`ad-container ${className}`}
-            style={{ 
+            style={{
                 minHeight: fallbackHeight,
-                ...adStyle 
-            }}
-        >
+                ...adStyle
+            }}>
             {!isVisible && (
-                <div 
-                    className="flex items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-lg"
-                    style={{ height: fallbackHeight }}
-                >
-                    <div className="text-gray-500 text-sm">广告加载中...</div>
+                <div
+                    className='flex items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800'
+                    style={{ height: fallbackHeight }}>
+                    <div className='text-sm text-gray-500'>广告加载中...</div>
                 </div>
             )}
-            
+
             {isVisible && (
                 <ins
-                    className="adsbygoogle"
+                    className='adsbygoogle'
                     style={adStyle}
-                    data-ad-client="ca-pub-6374049973848571"
+                    data-ad-client='ca-pub-6374049973848571'
                     data-ad-slot={adSlot}
                     data-ad-format={adFormat}
-                    data-full-width-responsive="true"
+                    data-full-width-responsive='true'
                 />
             )}
         </div>
@@ -120,7 +119,8 @@ export function useAdSensePreload() {
             if (typeof window !== 'undefined' && !(window as any).adsbygoogle) {
                 const script = document.createElement('script');
                 script.async = true;
-                script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6374049973848571';
+                script.src =
+                    'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6374049973848571';
                 script.crossOrigin = 'anonymous';
                 document.head.appendChild(script);
             }

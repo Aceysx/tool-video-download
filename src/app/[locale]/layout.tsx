@@ -8,7 +8,7 @@ import { ThemeProvider } from 'next-themes';
 
 import '@/app/globals.css';
 import { AdSensePreloader } from '@/components/ads/adsense-preloader';
-import { LightweightAnalytics, ConditionalAdSense } from '@/components/analytics/optimized-scripts';
+import { ConditionalAdSense, LightweightAnalytics } from '@/components/analytics/optimized-scripts';
 import { Footer } from '@/components/layout/footer';
 import { Navbar } from '@/components/layout/navbar';
 import { Toaster } from '@/registry/new-york-v4/ui/sonner';
@@ -52,8 +52,7 @@ export default async function LocaleLayout({
 
     return (
         <html suppressHydrationWarning lang={locale}>
-            <body
-                className={` bg-background text-foreground overscroll-none antialiased`}>
+            <body className={`bg-background text-foreground overscroll-none antialiased`}>
                 {/* 优化的 Google Analytics - 延迟加载 */}
                 <LightweightAnalytics />
 

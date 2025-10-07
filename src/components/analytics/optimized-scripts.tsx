@@ -1,7 +1,8 @@
 'use client';
 
-import Script from 'next/script';
 import { useEffect, useState } from 'react';
+
+import Script from 'next/script';
 
 const GA_MEASUREMENT_ID = 'G-2K4QQ6SDRY';
 const ADSENSE_CLIENT_ID = 'ca-pub-6374049973848571';
@@ -20,9 +21,9 @@ export function OptimizedScripts() {
 
         // 监听用户交互事件
         const events = ['mousedown', 'mousemove', 'keypress', 'scroll', 'touchstart', 'click'];
-        
+
         const addEventListeners = () => {
-            events.forEach(event => {
+            events.forEach((event) => {
                 document.addEventListener(event, loadAdSense, { once: true, passive: true });
             });
         };
@@ -32,7 +33,7 @@ export function OptimizedScripts() {
 
         return () => {
             clearTimeout(timer);
-            events.forEach(event => {
+            events.forEach((event) => {
                 document.removeEventListener(event, loadAdSense);
             });
         };
@@ -105,10 +106,7 @@ export function LightweightAnalytics() {
 
     return (
         <>
-            <Script
-                src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-                strategy='lazyOnload'
-            />
+            <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} strategy='lazyOnload' />
             <Script id='lightweight-analytics' strategy='lazyOnload'>
                 {`
                     window.dataLayer = window.dataLayer || [];
