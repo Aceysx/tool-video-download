@@ -118,7 +118,7 @@ export function VideoDownloadSection() {
     return (
         <div className='space-y-4'>
             {/* 输入表单 - 现代卡片设计 */}
-            <Card className='relative overflow-hidden border-border/50 bg-card p-5 shadow-lg sm:p-6'>
+            <Card className='border-border/50 bg-card relative overflow-hidden p-5 shadow-lg sm:p-6'>
                 {/* 装饰性渐变背景 */}
                 <div className='bg-primary/5 absolute -top-10 -right-10 h-40 w-40 rounded-full blur-3xl' />
                 <div className='bg-primary/5 absolute -bottom-10 -left-10 h-40 w-40 rounded-full blur-3xl' />
@@ -198,8 +198,8 @@ export function VideoDownloadSection() {
 
                     {/* 支持类型提示 */}
                     {!url && !loading && (
-                        <div className='fade-in mt-3 rounded-lg bg-muted/30 p-2.5'>
-                            <p className='text-center text-xs text-muted-foreground'>💡 {t('form.supportTip')}</p>
+                        <div className='fade-in bg-muted/30 mt-3 rounded-lg p-2.5'>
+                            <p className='text-muted-foreground text-center text-xs'>💡 {t('form.supportTip')}</p>
                         </div>
                     )}
                 </form>

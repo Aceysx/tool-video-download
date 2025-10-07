@@ -1,4 +1,3 @@
-import { LazyAdUnit, useAdSensePreload } from '@/components/ads/lazy-ad-unit';
 import { PlatformLogo } from '@/components/platform-logo';
 import { FAQPageSchema, HowToSchema, WebApplicationSchema } from '@/components/seo/structured-data';
 import { VideoDownloadSection } from '@/components/video-downloader/video-download-section';
@@ -140,13 +139,15 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                     <div className='mx-auto max-w-4xl'>
                         <VideoDownloadSection />
 
-                        {/* 懒加载广告单元 - 在下载工具下方 */}
+                        {/* Google AdSense 广告位 */}
                         <div className='mt-6'>
-                            <LazyAdUnit
-                                adSlot='1234567890'
-                                adFormat='auto'
-                                className='overflow-hidden rounded-lg'
-                                fallbackHeight={200}
+                            <ins
+                                className='adsbygoogle'
+                                style={{ display: 'block' }}
+                                data-ad-client='ca-pub-6374049973848571'
+                                data-ad-slot='1234567890'
+                                data-ad-format='auto'
+                                data-full-width-responsive='true'
                             />
                         </div>
                     </div>
