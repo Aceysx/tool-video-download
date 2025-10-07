@@ -7,6 +7,7 @@ import Script from 'next/script';
 import { ThemeProvider } from 'next-themes';
 
 import '@/app/globals.css';
+import { GoogleAnalytics } from '@/components/analytics/google-analytics';
 import { Footer } from '@/components/layout/footer';
 import { Navbar } from '@/components/layout/navbar';
 import { Toaster } from '@/registry/new-york-v4/ui/sonner';
@@ -64,6 +65,9 @@ export default async function LocaleLayout({
         <html suppressHydrationWarning lang={locale}>
             <body
                 className={`${geistSans.variable} ${geistMono.variable} bg-background text-foreground overscroll-none antialiased`}>
+                {/* Google Analytics */}
+                <GoogleAnalytics />
+                
                 {/* Google AdSense */}
                 <Script
                     async
