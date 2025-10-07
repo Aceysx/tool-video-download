@@ -1,6 +1,6 @@
 {
     "common": {
-        "appName": "Video Downloader",
+        "appName": "Free online video downloader",
         "appDescription": "Free online video downloader, support TikTok, Instagram, Douyin, Suno Music and more platforms without watermarks",
         "loading": "Loading...",
         "error": "Error",
@@ -179,7 +179,7 @@
         "unknown": "Unknown error, please retry"
     },
     "footer": {
-        "description": "Free online video downloader, support multi-platform watermark-free downloads",
+        "description": "Free online video downloader",
         "links": {
             "title": "Quick Links",
             "home": "Home",
@@ -196,7 +196,7 @@
         "social": {
             "title": "Follow Us"
         },
-        "copyright": "© 2025 Video Downloader. All rights reserved."
+        "copyright": "© 2025 Video Downloader. "
     },
     "about": {
         "title": "About Us",

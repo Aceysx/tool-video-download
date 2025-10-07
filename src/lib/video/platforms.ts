@@ -12,7 +12,7 @@ export interface PlatformConfig {
 
 export const SUPPORTED_PLATFORMS: Record<string, PlatformConfig> = {
     douyin: {
-        name: '抖音',
+        name: 'Douyin',
         icon: '🎶',
         logo: '/images/抖音.png',
         regex: /douyin\.com\/video\/|v\.douyin\.com\//,
@@ -42,6 +42,7 @@ export const SUPPORTED_PLATFORMS: Record<string, PlatformConfig> = {
     instagram: {
         name: 'Instagram',
         icon: '📷',
+        logo: '/images/Instagram.png',
         regex: /instagram\.com\/(p|reel|tv)\//,
         color: '#E4405F'
     },

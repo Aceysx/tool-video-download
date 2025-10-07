@@ -52,7 +52,7 @@ export default async function LocaleLayout({
     return (
         <html suppressHydrationWarning lang={locale}>
             <body
-                className={`${geistSans.variable} ${geistMono.variable} bg-background text-foreground overscroll-none antialiased`}>
+                className={` bg-background text-foreground overscroll-none antialiased`}>
                 {/* Google Analytics */}
                 <GoogleAnalytics />
 
