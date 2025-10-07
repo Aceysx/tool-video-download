@@ -128,13 +128,11 @@ export function ConditionalAdSense() {
 
     useEffect(() => {
         // 只在用户滚动到页面底部或停留超过 10 秒时加载
-        let scrollTimer: NodeJS.Timeout;
         let stayTimer: NodeJS.Timeout;
 
         const handleScroll = () => {
             if (window.scrollY > window.innerHeight * 0.5) {
                 setShouldLoad(true);
-                clearTimeout(scrollTimer);
             }
         };
 
@@ -149,7 +147,6 @@ export function ConditionalAdSense() {
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
-            clearTimeout(scrollTimer);
             clearTimeout(stayTimer);
         };
     }, []);
