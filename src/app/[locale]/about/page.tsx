@@ -9,7 +9,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'about' });
     const tCommon = await getTranslations({ locale, namespace: 'common' });
-    const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://yourdomain.com';
+    const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://www.quickvideo.online';
     const currentUrl = locale === 'zh-CN' ? `${baseUrl}/about` : `${baseUrl}/${locale}/about`;
     // 每个语言版本都使用自己的 URL 作为 canonical
 

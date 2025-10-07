@@ -12,7 +12,7 @@ import { getTranslations } from 'next-intl/server';
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'home' });
-    const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://yourdomain.com';
+    const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://www.quickvideo.online';
     const currentUrl = locale === 'zh-CN' ? baseUrl : `${baseUrl}/${locale}`;
     // 每个语言版本都使用自己的 URL 作为 canonical
 
