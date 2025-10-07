@@ -7,7 +7,8 @@ import Script from 'next/script';
 import { ThemeProvider } from 'next-themes';
 
 import '@/app/globals.css';
-import { GoogleAnalytics } from '@/components/analytics/google-analytics';
+import { AdSensePreloader } from '@/components/ads/adsense-preloader';
+import { LightweightAnalytics, ConditionalAdSense } from '@/components/analytics/optimized-scripts';
 import { Footer } from '@/components/layout/footer';
 import { Navbar } from '@/components/layout/navbar';
 import { Toaster } from '@/registry/new-york-v4/ui/sonner';
@@ -53,16 +54,11 @@ export default async function LocaleLayout({
         <html suppressHydrationWarning lang={locale}>
             <body
                 className={` bg-background text-foreground overscroll-none antialiased`}>
-                {/* Google Analytics */}
-                <GoogleAnalytics />
+                {/* 优化的 Google Analytics - 延迟加载 */}
+                <LightweightAnalytics />
 
-                {/* Google AdSense */}
-                <Script
-                    async
-                    src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6374049973848571'
-                    crossOrigin='anonymous'
-                    strategy='afterInteractive'
-                />
+                {/* 条件加载的 Google AdSense */}
+                <ConditionalAdSense />
 
                 <NextIntlClientProvider locale={locale} messages={messages}>
                     <ThemeProvider attribute='class'>
@@ -72,6 +68,8 @@ export default async function LocaleLayout({
                             <Footer />
                         </div>
                         <Toaster />
+                        {/* AdSense 预加载器 */}
+                        <AdSensePreloader />
                     </ThemeProvider>
                 </NextIntlClientProvider>
             </body>
