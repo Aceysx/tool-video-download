@@ -67,7 +67,7 @@ export default async function LocaleLayout({
                 className={`${geistSans.variable} ${geistMono.variable} bg-background text-foreground overscroll-none antialiased`}>
                 {/* Google Analytics */}
                 <GoogleAnalytics />
-                
+
                 {/* Google AdSense */}
                 <Script
                     async
