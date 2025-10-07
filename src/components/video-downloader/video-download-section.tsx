@@ -11,13 +11,10 @@ import { Input } from '@/registry/new-york-v4/ui/input';
 
 import { VideoPreview } from './video-preview';
 import { AlertCircle, Loader2, Music, Video } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
-interface VideoDownloadSectionProps {
-    locale: string;
-}
-
-export function VideoDownloadSection({ locale }: VideoDownloadSectionProps) {
+export function VideoDownloadSection() {
+    const locale = useLocale();
     const t = useTranslations('videoDownloader');
     const tCommon = useTranslations('common');
     const [url, setUrl] = useState('');

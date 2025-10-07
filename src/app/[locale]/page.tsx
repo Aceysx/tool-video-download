@@ -136,7 +136,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 {/* 视频下载工具 */}
                 <section className='container mx-auto max-w-7xl px-4 pb-12 md:px-6 md:pb-16 lg:px-8'>
                     <div className='mx-auto max-w-4xl'>
-                        <VideoDownloadSection locale={locale} />
+                        <VideoDownloadSection />
                     </div>
                 </section>
 
