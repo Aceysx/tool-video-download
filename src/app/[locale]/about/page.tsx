@@ -11,13 +11,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const tCommon = await getTranslations({ locale, namespace: 'common' });
     const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://yourdomain.com';
     const currentUrl = locale === 'zh-CN' ? `${baseUrl}/about` : `${baseUrl}/${locale}/about`;
-    const canonicalUrl = `${baseUrl}/about`; // 所有语言版本都指向中文版本作为 canonical
+    // 每个语言版本都使用自己的 URL 作为 canonical
 
     return {
         title: `${t('title')} - ${tCommon('appName')}`,
         description: t('subtitle'),
         alternates: {
-            canonical: canonicalUrl,
+            canonical: currentUrl,
             languages: {
                 'zh-CN': `${baseUrl}/about`,
                 en: `${baseUrl}/en/about`,
