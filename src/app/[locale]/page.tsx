@@ -15,6 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const t = await getTranslations({ locale, namespace: 'home' });
     const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://yourdomain.com';
     const currentUrl = locale === 'zh-CN' ? baseUrl : `${baseUrl}/${locale}`;
+    const canonicalUrl = baseUrl; // 所有语言版本都指向根域名作为 canonical
 
     return {
         title: t('title'),
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             }
         },
         alternates: {
-            canonical: currentUrl,
+            canonical: canonicalUrl,
             languages: {
                 'zh-CN': baseUrl,
                 'en': `${baseUrl}/en`,

@@ -7,12 +7,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const t = await getTranslations({ locale, namespace: 'legal' });
     const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://yourdomain.com';
     const currentUrl = locale === 'zh-CN' ? `${baseUrl}/legal/disclaimer` : `${baseUrl}/${locale}/legal/disclaimer`;
+    const canonicalUrl = `${baseUrl}/legal/disclaimer`; // 所有语言版本都指向中文版本作为 canonical
 
     return {
         title: t('disclaimer.title'),
         description: locale === 'zh-CN' ? '重要免责声明' : 'Important disclaimer',
         alternates: {
-            canonical: currentUrl,
+            canonical: canonicalUrl,
             languages: {
                 'zh-CN': `${baseUrl}/legal/disclaimer`,
                 'en': `${baseUrl}/en/legal/disclaimer`,
