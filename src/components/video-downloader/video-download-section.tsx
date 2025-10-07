@@ -3,7 +3,7 @@
 import { useRef, useState } from 'react';
 
 import type { VideoInfo } from '@/lib/api/types';
-import { detectPlatform, getAllPlatforms } from '@/lib/video/platforms';
+import { detectPlatform } from '@/lib/video/platforms';
 import { Alert, AlertDescription } from '@/registry/new-york-v4/ui/alert';
 import { Button } from '@/registry/new-york-v4/ui/button';
 import { Card } from '@/registry/new-york-v4/ui/card';
@@ -22,9 +22,7 @@ export function VideoDownloadSection() {
     const [error, setError] = useState('');
     const [videoInfo, setVideoInfo] = useState<VideoInfo | null>(null);
     const resultRef = useRef<HTMLDivElement>(null);
-
-    const platforms = getAllPlatforms();
-
+    console.log('Current locale:', locale, tCommon('appName'));
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setError('');

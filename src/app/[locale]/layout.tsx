@@ -15,18 +15,6 @@ import { Toaster } from '@/registry/new-york-v4/ui/sonner';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 
-const geistSans = localFont({
-    src: '../fonts/GeistVF.woff',
-    variable: '--font-geist-sans',
-    weight: '100 900'
-});
-
-const geistMono = localFont({
-    src: '../fonts/GeistMonoVF.woff',
-    variable: '--font-geist-mono',
-    weight: '100 900'
-});
-
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'common' });
@@ -59,7 +47,7 @@ export default async function LocaleLayout({
 }>) {
     // 获取翻译消息
     const { locale } = await params;
-    const messages = await getMessages();
+    const messages = await getMessages({ locale });
 
     return (
         <html suppressHydrationWarning lang={locale}>
