@@ -24,11 +24,11 @@ export function LazyAdUnit({
     useEffect(() => {
         // 延迟加载 AdSense 脚本
         const loadAdSense = () => {
-        if (isLoaded) {
-            return;
-        }
+            if (isLoaded) {
+                return;
+            }
 
-        // 检查 AdSense 是否已加载
+            // 检查 AdSense 是否已加载
             if (typeof window !== 'undefined' && (window as any).adsbygoogle) {
                 setIsLoaded(true);
 
