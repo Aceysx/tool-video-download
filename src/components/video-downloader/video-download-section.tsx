@@ -3,7 +3,6 @@
 import { useRef, useState } from 'react';
 
 import type { VideoInfo } from '@/lib/api/types';
-import { detectPlatform } from '@/lib/video/platforms';
 import { Alert, AlertDescription } from '@/registry/new-york-v4/ui/alert';
 import { Button } from '@/registry/new-york-v4/ui/button';
 import { Card } from '@/registry/new-york-v4/ui/card';
@@ -41,17 +40,6 @@ export function VideoDownloadSection() {
 
         console.log('📝 URL:', trimmedUrl);
 
-        // 检测平台
-        const platform = detectPlatform(trimmedUrl);
-        if (!platform) {
-            console.log('❌ 不支持的平台');
-            setError(t('errors.unsupportedPlatform'));
-
-            return;
-        }
-
-        console.log('✅ 检测到平台:', platform);
-
         setLoading(true);
         console.log('🔄 开始调用 API...');
 
@@ -60,7 +48,7 @@ export function VideoDownloadSection() {
             const response = await fetch('/api/video/parse', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ url: trimmedUrl, platform })
+                body: JSON.stringify({ url: trimmedUrl })
             });
 
             console.log('📡 API 响应状态:', response.status);
@@ -89,7 +77,6 @@ export function VideoDownloadSection() {
             // 追踪成功事件
             if (typeof window !== 'undefined' && (window as any).gtag) {
                 (window as any).gtag('event', 'video_parsed', {
-                    platform: platform,
                     success: true
                 });
             }
