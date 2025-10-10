@@ -52,15 +52,14 @@ export default async function LocaleLayout({
     return (
         <html suppressHydrationWarning lang={locale}>
             <body className={`bg-background text-foreground overscroll-none antialiased`}>
-                {/* Google Analytics */}
+                {/* Google Analytics - 延迟加载以提升首屏性能 */}
                 <GoogleAnalytics />
 
-                {/* Google AdSense */}
+                {/* Google AdSense - 延迟加载以提升首屏性能 */}
                 <Script
-                    async
                     src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6374049973848571'
                     crossOrigin='anonymous'
-                    strategy='afterInteractive'
+                    strategy='lazyOnload'
                 />
 
                 <NextIntlClientProvider locale={locale} messages={messages}>
