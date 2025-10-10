@@ -61,7 +61,10 @@ export default async function LocaleLayout({
                     crossOrigin='anonymous'
                     strategy='lazyOnload'
                 />
-
+                <Script defer src='https://cloud.umami.is/script.js'
+                      crossOrigin='anonymous'
+                    strategy='lazyOnload'
+                data-website-id='745186ca-12f4-4c9d-ab03-943a8b77eeff' />  
                 <NextIntlClientProvider locale={locale} messages={messages}>
                     <ThemeProvider attribute='class'>
                         <div className='flex min-h-screen flex-col'>
